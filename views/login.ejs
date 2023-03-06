@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       body {
+              background-color: #C2DED1;
+            }
+            
+            h1 {
+              color: #354259;
+              text-align: center;
+            }
+            
+            p {
+              font-family: Times;
+              font-size: 20px;
+            }
+        </style>
+</head>
+<h1>Login</h1>
+<%- message %>
+<form method="post" action="/users">
+  <p>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username">
+  </p>
+  <p>
+    <label for="password">Password:</label>
+    <input type="text" name="password" id="password">
+  </p>
+  <p>
+    <input type="submit" value="Login">
+  </p>
+</form>
+</html>
+
